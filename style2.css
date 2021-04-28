@@ -57,6 +57,7 @@ header ul li a{
     margin-inline-start: 8%;
     line-height: 2;
     height: 190%;
+    width: 738px;
    
 }
 
@@ -71,9 +72,10 @@ header ul li a{
 }
 
 .container2 img{
-    height: 45%;
+    height: 422px;
     border-radius: 46%;
     margin-top: 5%;
+    padding-right: 10% !important;
 }
 
 .container2{
@@ -84,7 +86,23 @@ header ul li a{
 .text2{
     float:right;
     color: #0f4574;
+    position: relative;
 }
-.band
+
+.text2 h3{
+    font-size: 30px;
+    right: 117px;
+    position:absolute;
+    bottom: 2px;
+    
+
+}
+
+.text2 p{
+    color: black;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
 
 
