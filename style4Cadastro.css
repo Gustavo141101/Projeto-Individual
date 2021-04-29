@@ -55,7 +55,7 @@ header ul li a{
 .form-cadastro
   {
     margin: 21%;
-    margin-top: 14%;
+    margin-top: 8%;
     padding: 20px;
     width: 50%;
     background-color: rgb(245, 245, 245 ,0.5);
@@ -114,16 +114,22 @@ header ul li a{
       display: inline-block;
      
   }
-  
-  .btn-cadastro
-  {
-    background-color: rgb(39, 146, 39);
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    cursor: pointer;
-    outline: none;
-    border-radius: 10px;
-    text-decoration: none;
+  .bottom-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
   }
+    
 
+  .text-calistenia{
+    color: tomato;
+  }
+ 
+ .img-geral{
+   background-image: url("./Imagens/Calistenia-Login.png");
+   height: 90vh;
+ }
+ .conteudo-login{
+   padding-top: 1%;
+ }

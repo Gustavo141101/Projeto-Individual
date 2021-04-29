@@ -41,12 +41,11 @@ header li{
     text-transform: uppercase;
     font-size: 17px;
     padding: 16px;
+
 }
 
 header ul li a{
     text-decoration: none;
-
-
 }
 
 .text-calistenia{
@@ -57,7 +56,6 @@ header ul li a{
     width: 40%;
     margin: auto;
     height: 380px;
-    margin-top: 100px;
     border-radius: 5px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -65,8 +63,8 @@ header ul li a{
   .form-login h1 {
     color: tomato;
     text-align: center;
-    padding-top: 45px;
     font-weight: bold;
+    margin-top: 15%;
   }
   
   .form-login label,
@@ -111,3 +109,11 @@ header ul li a{
     margin: 43%;
   }
 
+.img-geral{
+  background-image: url("./Imagens/Calistenia-Login.png");
+  height: 90vh;
+}
+
+.conteudo-login{
+  padding-top: 1%
+}
