@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4Cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1><span class="text-calistenia">Calistenics</span>Family</h1>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="O_que_é_Calistenia.html">O que é Calistenia?</a></li>
+            <li><a href="login.html" class="text-calistenia">Login</a> </li>
+        </ul>
+        </div>
+    </header>
+    <div class="conteudo-login">
+        <div class="container">
+          <form class="form-cadastro">
+    
+            <div class="form-principal">
+    
+              <!-- Nome e Email -->
+              <h1>Cadastro</h1>
+              <label for="idNome">Nome:</label>
+              <input type="text" id="idNome" class="input-cadastro">
+              <br>
+              <label for="idEmail">Email:</label>
+              <input type="email" id="idEmail" class="input-cadastro">
+    
+              <!-- Senha CNPJ CEP -->
+              <div class="form-inline">
+    
+                <div class="form-particao">
+                  <label for="idSenha">Senha:</label>
+                  <input maxlength="16" type="password" id="idSenha" class="input-cadastro">
+                </div>
+                <div class="form-particao">
+                  <label for="idConfirmSenha">Confirmar a Senha:</label>
+                  <input maxlength="16" type="password" id="idConfirmSenha" class="input-cadastro">
+                </div>
+    
+                
+                
+    
+              
+              
+             
+    
+              <a class="btn-cadastro" onclick="verificarCadastro()">Cadastrar</a>
+            </div>
+    
+          </form>
+        </div>
+      </div>
+</body>
+</html>

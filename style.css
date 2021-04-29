@@ -82,7 +82,7 @@ main {
     text-align: center;
     align-items: center;
     opacity: 1;
-    color: silver;
+    color: #0f4574;
     margin: auto;
 
 }
@@ -92,3 +92,37 @@ main {
     height: 100%;
 }
 
+.footer{
+    background-color: grey;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.footer h1{
+    color: black;
+}
+
+.footer ul li{
+    /* Tira o estilo de link (sublinhado) */
+    text-decoration: none; 
+    color: #0f4574;
+    margin: 5px;
+    list-style: none;
+}
+
+.contato{
+    float: left;
+    
+}
+.mais{
+    float: right;
+   
+}
+.mais p{
+    margin: 14%;
+    color: #0f4574;
+
+}
+.footer a{
+    color: black;
+}
