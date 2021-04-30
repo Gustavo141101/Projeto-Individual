@@ -50,7 +50,10 @@ header ul li a{
 }
 .text-calistenia{
     color: tomato;
+    text-align: center;
 }
+
+
 
 .form-cadastro
   {
@@ -80,7 +83,7 @@ header ul li a{
   {
       display: block;
       margin: 15px 0px 0px;
-      font-weight: bold;
+      
   }
 
   .form-inline
@@ -138,9 +141,42 @@ header ul li a{
  
  .img-geral{
    background-image: url("./Imagens/Calistenia-Login.png");
-   height: 90vh;
+   height: 110vh;
  }
  .conteudo-login{
    padding-top: 1%;
  }
+ .footer{
+  background-color: black;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.footer h1{
+  color: #f0f8ffcc;
+}
+
+.footer ul li{
+  text-decoration: none; 
+  color: #0f4574;
+  margin: 5px;
+  list-style: none;
+}
+
+.contato{
+  float: left;
+  
+}
+.mais{
+  float: right;
+ 
+}
+.mais p{
+  margin: 14%;
+  color: #0f4574;
+
+}
+.footer a{
+  color: black;
+}
 

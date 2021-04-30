@@ -1,57 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style4Cadastro.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style4Cadastro.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-        <h1><span class="text-calistenia">Calistenics</span>Family</h1>
-        <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="O_que_é_Calistenia.html">O que é Calistenia?</a></li>
-            <li><a href="login.html" class="text-calistenia">Login</a> </li>
-        </ul>
-        </div>
-    </header>
-    <div class="img-geral">
+  <header>
+    <div class="container">
+      <h1><span class="text-calistenia">Calistenics</span>Family</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="O_que_é_Calistenia.html">O que é Calistenia?</a></li>
+        <li><a href="login.html" class="text-calistenia">Login</a> </li>
+      </ul>
+    </div>
+  </header>
+  <div class="img-geral">
     <div class="conteudo-login">
-        <div class="container">
-          <form class="form-cadastro">
-    
-            <div class="form-principal">
-    
-              <!-- Nome e Email -->
-              <h1 class="text-calistenia">Cadastro</h1>
-              <label for="idNome">Nome:</label>
-              <input type="text" id="idNome" class="input-cadastro">
-              <br>
-              <label for="idEmail">Email:</label>
-              <input type="email" id="idEmail" class="input-cadastro">
-    
-              <!-- Senha CNPJ CEP -->
-              <div class="form-inline">
-    
-                <div class="form-particao">
-                  <label for="idSenha">Senha:</label>
-                  <input maxlength="16" type="password" id="idSenha" class="input-cadastro">
-                </div>
-                <div class="form-particao">
-                  <label for="idConfirmSenha">Confirmar a Senha:</label>
-                  <input maxlength="16" type="password" id="idConfirmSenha" class="input-cadastro">
-                </div>
-         
-                <div  class="bottom-cadastro" >
-              <button class="bottom-cadastro2"  onclick="verificarCadastro()">Cadastrar</button>
+      <div class="container">
+        <form class="form-cadastro">
+
+          <div class="form-principal">
+
+            <!-- Nome e Email -->
+            <h1 class="text-calistenia">Cadastro</h1>
+            <label for="idNome">Nome:</label>
+            <input type="text" id="idNome" class="input-cadastro" placeholder="Digite o seu nome">
+            <br>
+            <label for="idEmail">E-mail:</label>
+            <input type="email" id="idEmail" class="input-cadastro" placeholder="Digite o seu e-mail">
+
+            <!-- Senha CNPJ CEP -->
+            <div class="form-inline">
+
+              <div class="form-particao">
+                <label for="idSenha">Senha:</label>
+                <input maxlength="16" type="password" id="idSenha" class="input-cadastro" placeholder="Digite sua Senha">
+              </div>
+              <div class="form-particao">
+                <label for="idConfirmSenha">Confirmar a Senha:</label>
+                <input maxlength="16" type="password" id="idConfirmSenha" class="input-cadastro" placeholder="Confirme sua Senha">
+              </div>
+
+              <div class="bottom-cadastro">
+                <button class="bottom-cadastro2" onclick="verificarCadastro()">Cadastrar</button>
+              </div>
             </div>
-          </div>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
+  </div>
+  <div class="footer">
+
+    <div class="container">
+        <div class="contato">
+            <h1 class="text-orange">Contato</h1>
+            <ul>
+                <li>E-mail: gustavoleal@calistenia.com</li>
+                <li>WhatsApp: +55 (11) 944923-4444</li>
+                <li>Instagram: <a href="https://www.instagram.com/_gsleal/">Gustavo Leal</a>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mais">
+            <h1 class="text-orange">CalistenicsFamily</h1>
+            <p>CALISTENIA É UMA FAMÍLIA</p>
+        </div>
+    </div>
+</div>
+</footer>
 </body>
+
 </html>
+
+<script>
+   function verificarCadastro() {
+    var nome = idNome.value; //min 3
+    var email = idEmail.value; //@
+    var senha = idSenha.value; //min 8 max 16 
+    var confirmSenha = idConfirmSenha.value; // == senha
+     
+    if (nome.length <= 3) {
+      mensagem += "Nome deve ter no minimo 3 caracteres <br>";
+    
+    }
+    if (email.indexOf("@") == -1) {
+      mensagem += "Insira um Email Válido <br>";
+    }
+
+    if (senha.length < 8 || senha.length > 16) {
+      mensagem += "A senha deve ter entre 8 e 16 caracteres <br>";
+    }
+
+    if (confirmSenha != senha) {
+
+      mensagem += "As senhas não são iguais <br>";
+    
+  
+    }
+
+  
+   }
+
+
+
+</script>

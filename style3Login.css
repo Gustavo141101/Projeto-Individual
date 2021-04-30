@@ -51,6 +51,9 @@ header ul li a{
 .text-calistenia{
   color: tomato;
 }
+.margem-cadastro{
+  margin: 4%;
+}
 .form-login {
     background-color: rgb(245, 245, 245 ,0.5);
     width: 40%;
@@ -84,6 +87,7 @@ header ul li a{
     height: 35px;
     border: inset #b5b5b5ab 3px;
     border-radius: 5px;
+    text-align: center;
   }
   
   .form-login button {
@@ -116,4 +120,37 @@ header ul li a{
 
 .conteudo-login{
   padding-top: 1%
+}
+.footer{
+  background-color: black;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.footer h1{
+  color: #f0f8ffcc;
+}
+
+.footer ul li{
+  text-decoration: none; 
+  color: #0f4574;
+  margin: 5px;
+  list-style: none;
+}
+
+.contato{
+  float: left;
+  
+}
+.mais{
+  float: right;
+ 
+}
+.mais p{
+  margin: 14%;
+  color: #0f4574;
+
+}
+.footer a{
+  color: black;
 }
