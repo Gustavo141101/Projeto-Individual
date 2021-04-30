@@ -120,6 +120,16 @@ header ul li a{
     align-items: center;
     margin-top: 5%;
   }
+  .bottom-cadastro2{
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    text-decoration: none;
+  }
     
 
   .text-calistenia{
@@ -133,3 +143,4 @@ header ul li a{
  .conteudo-login{
    padding-top: 1%;
  }
+
