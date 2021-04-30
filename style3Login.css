@@ -14,7 +14,7 @@ header {
     background-color: rgba(189, 183, 107, 0.435);
     display: block;
     box-shadow: 4px 4px 8px rgba(12, 10, 10, 0.4);
-    border-bottom: solid blue  3px;
+    border-bottom: solid tomato  3px;
     font-size: 15px;
     
 
@@ -128,7 +128,7 @@ header ul li a{
 }
 
 .footer h1{
-  color: #f0f8ffcc;
+  color: tomato;
 }
 
 .footer ul li{
@@ -152,5 +152,5 @@ header ul li a{
 
 }
 .footer a{
-  color: black;
+  color: tomato;
 }

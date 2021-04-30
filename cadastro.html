@@ -40,11 +40,13 @@
 
               <div class="form-particao">
                 <label for="idSenha">Senha:</label>
-                <input maxlength="16" type="password" id="idSenha" class="input-cadastro" placeholder="Digite sua Senha">
+                <input maxlength="16" type="password" id="idSenha" class="input-cadastro"
+                  placeholder="Digite sua Senha">
               </div>
               <div class="form-particao">
                 <label for="idConfirmSenha">Confirmar a Senha:</label>
-                <input maxlength="16" type="password" id="idConfirmSenha" class="input-cadastro" placeholder="Confirme sua Senha">
+                <input maxlength="16" type="password" id="idConfirmSenha" class="input-cadastro"
+                  placeholder="Confirme sua Senha">
               </div>
 
               <div class="bottom-cadastro">
@@ -58,37 +60,37 @@
   <div class="footer">
 
     <div class="container">
-        <div class="contato">
-            <h1 class="text-orange">Contato</h1>
-            <ul>
-                <li>E-mail: gustavoleal@calistenia.com</li>
-                <li>WhatsApp: +55 (11) 944923-4444</li>
-                <li>Instagram: <a href="https://www.instagram.com/_gsleal/">Gustavo Leal</a>
-            </ul>
-        </div>
+      <div class="contato">
+        <h1 class="text-orange">Contato</h1>
+        <ul>
+          <li>E-mail: gustavoleal@calistenia.com</li>
+          <li>WhatsApp: +55 (11) 944923-4444</li>
+          <li>Instagram: <a href="https://www.instagram.com/_gsleal/">Gustavo Leal</a>
+        </ul>
+      </div>
     </div>
     <div class="container">
-        <div class="mais">
-            <h1 class="text-orange">CalistenicsFamily</h1>
-            <p>CALISTENIA É UMA FAMÍLIA</p>
-        </div>
+      <div class="mais">
+        <h1 class="text-orange">CalistenicsFamily</h1>
+        <p>CALISTENIA É UMA FAMÍLIA</p>
+      </div>
     </div>
-</div>
-</footer>
+  </div>
+  </footer>
 </body>
 
 </html>
 
 <script>
-   function verificarCadastro() {
+  function verificarCadastro() {
     var nome = idNome.value; //min 3
     var email = idEmail.value; //@
     var senha = idSenha.value; //min 8 max 16 
     var confirmSenha = idConfirmSenha.value; // == senha
-     
+
     if (nome.length <= 3) {
       mensagem += "Nome deve ter no minimo 3 caracteres <br>";
-    
+
     }
     if (email.indexOf("@") == -1) {
       mensagem += "Insira um Email Válido <br>";
@@ -101,12 +103,12 @@
     if (confirmSenha != senha) {
 
       mensagem += "As senhas não são iguais <br>";
-    
-  
+
+
     }
 
-  
-   }
+
+  }
 
 
 
