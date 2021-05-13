@@ -1,0 +1,156 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: fantasy;
+}
+
+a{
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(189, 183, 107, 0.435);
+    display: block;
+    box-shadow: 4px 4px 8px rgba(12, 10, 10, 0.4);
+    border-bottom: solid tomato  3px;
+    font-size: 15px;
+    
+
+}
+.container{
+    color: black;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+header h1 {
+    float: left;
+}
+
+header ul{
+    list-style: none;
+    float: right;
+}
+
+header li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 16px;
+
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+.text-calistenia{
+  color: tomato;
+}
+.margem-cadastro{
+  margin: 4%;
+}
+.form-login {
+    background-color: rgb(245, 245, 245 ,0.5);
+    width: 40%;
+    margin: auto;
+    height: 380px;
+    border-radius: 5px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .form-login h1 {
+    color: tomato;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15%;
+  }
+  
+  .form-login label,
+  .form-login input {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .form-login label
+  {
+      font-weight: bold;
+  }
+  
+  .form-login input{
+    margin-bottom: 25px;
+    height: 35px;
+    border: inset #b5b5b5ab 3px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .form-login button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  .btn-cadastro {
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 43%;
+  }
+
+.img-geral{
+  background-image: url("./Imagens/Calistenia-Login.png");
+  height: 90vh;
+}
+
+.conteudo-login{
+  padding-top: 1%
+}
+.footer{
+  background-color: black;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.footer h1{
+  color: grey;
+}
+
+.footer ul li{
+  text-decoration: none; 
+  color: #0f4574;
+  margin: 5px;
+  list-style: none;
+}
+
+.contato{
+  float: left;
+  
+}
+.mais{
+  float: right;
+ 
+}
+.mais p{
+  margin: 14%;
+  color: #0f4574;
+
+}
+.footer a{
+  color: grey;
+}

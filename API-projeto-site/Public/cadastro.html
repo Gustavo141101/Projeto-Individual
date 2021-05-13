@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style4Cadastro.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1><span class="text-calistenia">Calistenics</span>Family</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="O_que_é_Calistenia.html">O que é Calistenia?</a></li>
+        <li><a href="login.html" class="text-calistenia">Login</a> </li>
+      </ul>
+    </div>
+  </header>
+  <div class="img-geral">
+    <div class="conteudo-login">
+      <div class="container">
+        <form onsubmit="cadastrar()" id="form_cadastro" class="form-cadastro">
+
+          <div class="form-principal">
+
+            <!-- Nome e Email -->
+            <h1 class="text-calistenia">Cadastro</h1>
+            <label for="idNome">Nome Completo:</label>
+            <input id="nome" type="text" name="nome" class="input-cadastro" placeholder="Nome e sobrenome" required minlength="4">
+            <br>
+            <label for="idEmail">Email:</label>
+            <input id="email" type="text"  name="email" class="input-cadastro" placeholder="seu nome de usuário" required
+              minlength="4">
+
+            <!-- Senha -->
+            <div class="form-inline">
+
+              <div class="form-particao">
+                <label for="idSenha">Senha:</label>
+                <input id="senha" type="password" name="senha" class="cadastro" placeholder="***************" required
+                  minlength="4">
+              </div>
+              <div class="form-particao">
+                <label for="idConfirmSenha">Confirmar a Senha:</label>
+                <input id="senha2" type="password" name="senha2" class="cadastro" placeholder="***************" required
+                  minlength="4">
+              </div>
+
+              <div class="bottom-cadastro">
+               <input type="submit" value="Cadastrar"  class="bottom-cadastro2"></input>
+              </div>
+              <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+                Erro no cadastro
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+
+      <div class="container">
+        <div class="contato">
+          <h1 class="text-orange">Contato</h1>
+          <ul>
+            <li>E-mail: gustavoleal@calistenia.com</li>
+            <li>WhatsApp: +55 (11) 944923-4444</li>
+            <li>Instagram: <a href="https://www.instagram.com/_gsleal/">Gustavo Leal</a>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mais">
+          <h1 class="text-orange">CalistenicsFamily</h1>
+          <p>CALISTENIA É UMA FAMÍLIA</p>
+        </div>
+      </div>
+    </div>
+    </footer>
+</body>
+
+</html>
+<script src="funcoes.js"></script>
+<script>
+
+  function cadastrar() {
+    var formulario = new URLSearchParams(new FormData(form_cadastro));
+    fetch("/usuarios/cadastrar", {
+      method: "POST",
+      body: formulario
+    }).then(function (response) {
+
+      if (response.ok) {
+
+        window.location.href = 'login.html';
+        alert("Cadastro Concluido!")
+      } else {
+        alert("Erro de cadastro!")
+        console.log('Erro de cadastro!');
+        response.text().then(function (resposta) {
+          div_erro.innerHTML = resposta;
+        });
+
+      }
+    });
+
+  }
+
+
+
+
+
+</script>
