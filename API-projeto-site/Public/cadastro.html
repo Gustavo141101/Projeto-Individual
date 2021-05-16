@@ -23,7 +23,7 @@
   <div class="img-geral">
     <div class="conteudo-login">
       <div class="container">
-        <form onsubmit="cadastrar()" id="form_cadastro" class="form-cadastro">
+        <form onsubmit="cadastrar();return false;" id="form_cadastro" class="form-cadastro">
 
           <div class="form-principal">
 
@@ -33,7 +33,7 @@
             <input id="nome" type="text" name="nome" class="input-cadastro" placeholder="Nome e sobrenome" required minlength="4">
             <br>
             <label for="idEmail">Email:</label>
-            <input id="email" type="text"  name="email" class="input-cadastro" placeholder="seu nome de usuário" required
+            <input id="email" type="text"  name="email" class="input-cadastro" placeholder="Digite seu email" required
               minlength="4">
 
             <!-- Senha -->
@@ -41,18 +41,16 @@
 
               <div class="form-particao">
                 <label for="idSenha">Senha:</label>
-                <input id="senha" type="password" name="senha" class="cadastro" placeholder="***************" required
-                  minlength="4">
+                <input id="senha" type="password" name="senha" class="cadastro" placeholder="***************" required minlength="4">
               </div>
               <div class="form-particao">
                 <label for="idConfirmSenha">Confirmar a Senha:</label>
-                <input id="senha2" type="password" name="senha2" class="cadastro" placeholder="***************" required
-                  minlength="4">
+                <input id="senha2" type="password" name="senha2" class="cadastro" placeholder="***************" required minlength="4">
               </div>
 
               <div class="bottom-cadastro">
-               <input type="submit" value="Cadastrar"  class="bottom-cadastro2"></input>
-              </div>
+               <!-- <input type="submit" value="Cadastrar"  class="bottom-cadastro2"></input> -->
+                <button type="submit" class="bottom-cadastro2">Cadastrar</button>
               <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
                 Erro no cadastro
               </div>
@@ -86,28 +84,40 @@
 </html>
 <script src="funcoes.js"></script>
 <script>
-
   function cadastrar() {
-    var formulario = new URLSearchParams(new FormData(form_cadastro));
-    fetch("/usuarios/cadastrar", {
-      method: "POST",
-      body: formulario
-    }).then(function (response) {
+    if (email.value.indexOf("@") > -1 && email.value.indexOf(".com") > -1) {
+                if (senha.value.length == 8) {
+                    if (senha2.value == senha.value) {
+                        var formulario = new URLSearchParams(new FormData(form_cadastro));
+                        fetch("/usuarios/cadastrar", {
+                            method: "POST",
+                            body: formulario
+                        }).then(function(response) {
 
-      if (response.ok) {
+                            // if (response.ok) {
+                            //     alert("Cadastro ok!");
+                            //     window.location.href = 'login.html';
+                            // } else {
+                            //     alert("Erro de cadastro!");
+                            //     console.log('Erro de cadastro!');
+                            //     response.text().then(function(resposta) {
+                            //         div_erro.innerHTML = resposta;
+                            //     });
+                            // }
+                        });
+                        alert("Cadastro Concluido!");
+                        window.location.href = "login.html"
 
-        window.location.href = 'login.html';
-        alert("Cadastro Concluido!")
-      } else {
-        alert("Erro de cadastro!")
-        console.log('Erro de cadastro!');
-        response.text().then(function (resposta) {
-          div_erro.innerHTML = resposta;
-        });
-
-      }
-    });
-
+                    } else {
+                        alert("Senha deve ser iguais!")
+                    }
+                } else {
+                    alert("Senha deve conter 8 caracteres!")
+                }
+            } else {
+            alert("Email incorreto!")
+        }
+     
   }
 
 

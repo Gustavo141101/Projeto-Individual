@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="container">
-      <h1> <a href="index.html"> <span  class="text-calistenia">Calistenics</span>Family </a></h1>
+      <h1> <a href="index.html"> <span class="text-calistenia">Calistenics</span>Family </a></h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="O_que_é_Calistenia.html">O que é Calistenia?</a></li>
@@ -24,15 +24,24 @@
     <div id="home" class="conteudo-login">
       <div class="container">
         <!-- Login -->
-        <form class="form-login">
+        <!-- <form id="form_login" class="form-login" method="post" onsubmit="return entrar()">
           <h1>Login</h1> <br> <br>
           <label for="idNomeLogin">Email:</label>
-          <input id="idNomeLogin" type="text" />
+          <input id="idNomeLogin" type="text" name="email" />
 
           <label for="idSenhaLogin">Senha:</label>
-          <input id="idSenhaLogin" type="password">
+          <input id="idSenhaLogin" type="password" name="senha">
 
-          <a onclick="login()" class="btn-cadastro">Entrar</a> <br><br>
+          <button class="btn-cadastro">Entrar</button> <br><br>
+          <p class="margem-cadastro">Ainda não é cadastrado? <a href="./cadastro.html"><b>Cadastre-se</b></a></p>
+        </form> -->
+        <form id="form_login" class="form-login" method="post" onsubmit="return entrar()">
+          <h1>Login</h1><br>
+          Email: <input type="text" name="login">
+          <br>
+          Senha: <input type="password" name="senha">
+          <br>
+          <button class="btn-cadastro" id="btn_entrar">Entrar</button> <br>
           <p class="margem-cadastro">Ainda não é cadastrado? <a href="./cadastro.html"><b>Cadastre-se</b></a></p>
         </form>
 
@@ -65,8 +74,52 @@
 </html>
 <script src="funcoes.js"></script>
 
+<script>
+  function entrar() {
+    var formulario = new URLSearchParams(new FormData(form_login));
+    fetch("/usuarios/autenticar", {
+      method: "POST",
+      body: formulario
+    }).then(resposta => {
+
+      if (resposta.ok) {
+
+        resposta.json().then(json => {
+
+          sessionStorage.login_usuario_meuapp = json.login;
+          sessionStorage.nome_usuario_meuapp = json.nome;
+
+          window.location.href = 'Redirecionamento.html';
+          alert("Login Ok!")
+        });
+
+      } else {
+
+        console.log('Erro de login!');
+        alert("Erro de Login!");
+        resposta.text().then(texto => {
+          console.error(texto);
+          finalizar_aguardar(texto);
+        });
+      }
+    });
+    return false;
+
+  }
+  function aguardar() {
+    btn_entrar.disabled = true;
+    img_aguarde.style.display = 'block';
+    div_erro.style.display = 'none';
+  }
+
+  function finalizar_aguardar(resposta) {
+    btn_entrar.disabled = false;
+    img_aguarde.style.display = 'none';
+    div_erro.style.display = 'block';
+    div_erro.innerHTML = resposta;
+  }
 
 
 
 
-
+</script>

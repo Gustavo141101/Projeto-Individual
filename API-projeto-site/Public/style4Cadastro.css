@@ -122,6 +122,7 @@ header ul li a{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    
   }
   .bottom-cadastro2{
     background-color: tomato;
@@ -132,6 +133,10 @@ header ul li a{
     outline: none;
     border-radius: 10px;
     text-decoration: none;
+  }
+  a{
+    text-decoration: none;
+    
   }
     
 

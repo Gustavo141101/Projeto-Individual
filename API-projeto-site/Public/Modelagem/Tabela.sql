@@ -10,5 +10,5 @@ CREATE TABLE usuario(
 
 select * from usuario;
 
-delete from usuario where id = '10';
+delete from usuario where id = '13';
 
