@@ -1,0 +1,14 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: fantasy;
+}
+
+
+header{
+    background-color: #232323;
+    border-right: 3px solid orangered;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
