@@ -48,6 +48,10 @@ header ul li a{
     text-decoration: none;
 }
 
+.deslocando{
+  padding-left: 15%;
+}
+
 .text-calistenia{
   color: tomato;
 }
