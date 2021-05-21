@@ -85,3 +85,13 @@
     .container-treinamento-mulheres {
         margin: 5%;
     }
+    .imagem-homem{
+        background-image: url("./Imagens/homem-treinando3.png");
+        background-size: cover;
+        background-position: right;
+        height: 436px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
