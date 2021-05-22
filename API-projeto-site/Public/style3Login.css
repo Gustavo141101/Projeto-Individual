@@ -24,6 +24,9 @@ header {
     width: 80%;
     margin: auto;
 }
+.logo:hover{
+ font-size: 30px;
+}
 
 
 
@@ -90,7 +93,7 @@ header ul li a{
   margin-bottom: 25px;
   height: 35px;
   border: inset #b5b5b5ab 3px;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
 }
 
@@ -107,6 +110,7 @@ header ul li a{
   margin-left: 44%;
 }
 
+
 .btn-cadastro {
   background-color: tomato;
   color: white;
@@ -117,6 +121,12 @@ header ul li a{
   border-radius: 10px;
   text-decoration: none;
   margin: 43%;
+}
+.style-email{
+ margin-left: 45%;
+}
+.style-senha{
+  margin-left: 45%;
 }
 
 .img-geral{
