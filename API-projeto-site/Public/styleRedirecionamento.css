@@ -57,7 +57,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 27%;
+        border-radius: 50px;
     }
     
     .h1-treinos {
@@ -105,7 +105,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 27%;
+        border-radius: 50px;
 
     }
     .container-treinamento-homens{
