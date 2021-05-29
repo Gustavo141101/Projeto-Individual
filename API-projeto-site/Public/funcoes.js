@@ -9,11 +9,11 @@ function verificar_autenticacao() {
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     
-    if (login_usuario == undefined)  {
+    if (nome_usuario == undefined)  {
         redirecionar_login();
     } else {
-        b_usuario.innerHTML = nome_usuario;
-        validar_sessao();
+        console.log("olá");
+        validar_sessao();     
     }
     
 }
@@ -30,10 +30,16 @@ function validar_sessao() {
         if (resposta.ok) {
             resposta.text().then(texto => {
                 console.log('Sessão :) ', texto);    
+                in_nome.innerHTML = nome_usuario;
+                in_login.style.display = 'none';
+                in_nome.style.display = 'block';
+               in_button.style.display = 'block';
+
+
             });
         } else {
             console.error('Sessão :.( ');
-            logoff();
+             logoff();
         } 
     });    
 }

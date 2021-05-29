@@ -16,7 +16,9 @@
             <ul>
                 <li><a href="Redirecionamento.html" class="text-calistenia">Treinos</a></li>
                 <li><a href="dashboard.html">Logantes diários</a></li>
-                <li><a href="login.html">Login</a> </li>
+                <li><a id="in_login" href="login.html">Login</a> </li>
+                <li><a style="display: none;" id="in_nome"></a> </li>
+                <li><button onclick="logoff()" style="display: none;" id="in_button">Sair</button></li>
             </ul>
         </div>
     </header>
@@ -133,3 +135,6 @@
 
 </html>
 <script src="funcoes.js"></script>
+<script>
+     verificar_autenticacao();
+</script>
