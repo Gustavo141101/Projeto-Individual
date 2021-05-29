@@ -1,11 +1,11 @@
 body {
-    background-color: antiquewhite;
+  background-color: #30303d; color: #fff;
     margin: 0;
     font-family: fantasy;
 }
 
 a{
-    color: black;
+    color: #6C6C80;
 }
 
 header {
@@ -72,11 +72,11 @@ header ul li a{
   }
   
   .form-login h1 {
-    color: black;
     text-align: center;
     font-weight: bold;
     margin-top: 15%;
-    font-family: sans-serif;
+    color: honeydew;
+    -webkit-text-stroke: 1px black
   }
   
 .form-login label,
@@ -124,6 +124,9 @@ header ul li a{
   text-decoration: none;
   margin: 43%;
 }
+.cadastro_final{
+  color: black;
+}
 .style-email{
  margin-left: 45%;
 }
@@ -168,9 +171,9 @@ header ul li a{
 }
 .mais p{
   margin: 14%;
-  color: black;
+  color: #6C6C80;
 
 }
 .footer a{
-  color: grey;
+  color: #6C6C80;
 }

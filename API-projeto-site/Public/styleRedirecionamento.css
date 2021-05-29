@@ -1,7 +1,7 @@
     body {
-        background-color: antiquewhite;
+        background-color: #30303d; color: #fff;
         margin: 0;
-        font-family: fantasy;
+        font-family: fantasy;  
     }
     
     header {
@@ -14,7 +14,7 @@
         background-image: linear-gradient(45deg, black, transparent);
     }
     a{
-        color: black;
+        color: #6C6C80;
     }
     
     header h1 {
@@ -50,7 +50,7 @@
     }
     
     .imagem-mulher {
-        background-image: url("./Imagens/Mulher-treinando.jpg");
+        background-image: url("./Imagens/Mulher-treinando-pretobranco.jpg");
         background-size: cover;
         background-position: right;
         height: 436px;
@@ -58,6 +58,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
+        opacity: 0.9;  
     }
     
     .h1-treinos {
@@ -77,28 +78,29 @@
     }
     
     .treinamentos-mulheres {
-        padding-left: 14%;
+        /* padding-left: 14%; */
         font-size: 21px;
         color: whitesmoke;
     }
     
     .h2-mulher2 {
-        text-align: center;
+        /* text-align: center; */
         font-size: 34px;
-        color: #ff0052a1
+        color: #ff0052;
     }
     
     .treinamentos-mulheres2 {
-        padding-left: 14%;
+        /* padding-left: 14%; */
         font-size: 21px;
         color: whitesmoke;
     }
     
     .container-treinamento-mulheres {
         margin: 5%;
+        margin-top: 0%;
     }
     .imagem-homem{
-        background-image: url("./Imagens/homem-treinando3.png");
+        background-image: url("./Imagens/homem-treinando-pretobranco.png");
         background-size: cover;
         background-position: right;
         height: 436px;
@@ -106,26 +108,82 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
-
+        opacity: 0.9;
+       
     }
     .container-treinamento-homens{
         margin:5%;
     }
     .h2-homem2{
-        text-align: center;
+        /* text-align: center; */
         font-size: 34px;
-        color: blue
+        color: crimson;
     }
     .treinamentos-homem {
-        padding-left: 14%;
+        /* padding-left: 14%; */
         font-size: 21px;
         color: whitesmoke;
     }
     .treinamentos-homem2 {
-        padding-left: 14%;
+        /* padding-left: 14%; */
         font-size: 21px;
         color: whitesmoke;
     }
-.video-motivation{
-    
+.video{
+    margin-left: 66%;
+    margin-top: -33%;
+   
 }
+.text1 {
+    color: #0f4574;
+    margin-top: 3%;
+    margin-inline-start: 8%;
+    line-height: 2;
+    height: 190%;
+    width: 738px;
+}
+.text1 h3{
+font-size: 30px;
+    color: #6C6C80;
+    -webkit-text-stroke: 2px black
+}
+.text1 p {
+    color: #ffffffbd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer{
+    padding-top: 15px;
+    overflow: hidden;
+    background-image: linear-gradient( 100deg, black, transparent);
+    margin-top: 16%;
+  }
+  
+  .footer h1{
+    color: black;
+      -webkit-text-stroke: 1px white;
+  }
+  
+  .footer ul li{
+    text-decoration: none; 
+    color: aliceblue;
+    margin: 5px;
+    list-style: none;
+    font-family: sans-serif;
+  }
+  
+  .contato{
+    float: left;
+    
+  }
+  .mais{
+    float: right;
+   
+  }
+  .mais p{
+    margin: 14%;
+    color: #6C6C80;
+  
+  }
+  .footer a{
+    color: #6C6C80;
+  }

@@ -1,11 +1,11 @@
 body {
-    background-color: antiquewhite;
+    background-color: #30303d; color: #fff;
     margin: 0;
     font-family: fantasy;
 }
 
 a{
-    color: black;
+    color: #6C6C80;
 }
 
 header {
@@ -59,15 +59,15 @@ header ul li a {
 }
 
 .text1 p {
-    color: black;
+    color: #ffffffbd;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .text1 h3 {
     font-size: 30px;
-    color: black;
+    color: #6C6C80;
+    -webkit-text-stroke: 2px black;
    
-
 }
 
 .container2 img {
@@ -99,11 +99,12 @@ header ul li a {
     bottom: 2px;
     margin: 6%;
     /* width: 45%; */
-    color: black;
+    color: #6C6C80;
+    -webkit-text-stroke: 2px black;
 }
 
 .text2 p {
-    color: black;
+    color: #ffffffbd;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 2;
 }
@@ -148,10 +149,10 @@ header ul li a {
 }
 .mais p{
     margin: 14%;
-    color: black;
+    color: #6C6C80;
 
 }
 .footer a{
-    color: black;
+    color: #6C6C80;
 }
 

@@ -1,11 +1,11 @@
 body {
-    background-color: antiquewhite;
+    background-color: #30303d; color: #fff;
     margin: 0;
     font-family: fantasy;
 }
 
 a{
-    color: black;
+    color:#6C6C80;
 }
 
 header {
@@ -88,7 +88,7 @@ main {
     opacity: 1;
     color: #f0f8ffa8;
     margin: auto;
-    margin-top: -6%;
+    margin-top: -8%;
     -webkit-text-stroke: 2px black;
 
 }
@@ -97,6 +97,7 @@ main {
     width: 100%;
     height: 100%;
 }
+
 
 .footer{
     background-image: linear-gradient(45deg, black, transparent);
@@ -127,9 +128,9 @@ main {
 }
 .mais p{
     margin: 14%;
-    color: black;
+    color: #6C6C80;
 
 }
 .footer a{
-    color: tomato;
+    color: #6C6C80;
 }
