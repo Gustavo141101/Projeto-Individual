@@ -7,6 +7,21 @@ body {
 a{
     color: #6C6C80;
 }
+.btn-banco{
+  background-color: black;
+  color: white;
+  background-color: black;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-banco:hover{
+  transition: all;
+  font-size: 19px;
+}
+.nome-real{
+  color: tomato;
+}
 
 header {
     width: 100%;
