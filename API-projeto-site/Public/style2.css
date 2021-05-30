@@ -44,15 +44,20 @@ header ul li a {
     text-decoration: none;
 }
 
-.text-calistenia {
+.text-calistenia  {
     color: honeydew;
     -webkit-text-stroke: 1px black;
+    
 }
-.text-calistenia:hover{
-    transition: all 0.2s linear;
-    transform: scale(1.1);
+/* .text-calistenia:hover{
     background-color: aqua;
-}
+    padd
+
+} */
+/* .text-calistenia {
+    color: honeydew;
+    -webkit-text-stroke: 1px black;
+} */
 
 .text1 {
     color: #0f4574;
